@@ -1,4 +1,8 @@
-Feature: Search (debounce), add, remove location
+Feature:
+-Search (debounce), add, remove location
+-Config Axios Interceptor
+-Call Api from WeatherApi
+-RTK config(not done)
 
 This project build with Expo and test on android device, flowing these step to run:
 
