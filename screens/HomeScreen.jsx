@@ -36,19 +36,19 @@ export default function HomeScreen({ route, navigation }) {
         )
 
     }
-    // Define a function to format the date
-    const formatDate = (dateString) => {
-        // Create a dayjs object with the provided date
-        const date = dayjs(dateString);
+    // // Define a function to format the date
+    // const formatDate = (dateString) => {
+    //     // Create a dayjs object with the provided date
+    //     const date = dayjs(dateString);
 
-        // Get the day of the week, month, and day
-        const dayOfWeek = date.format('dddd'); // Day of the week (e.g., "Thursday")
-        const month = date.format('MMMM'); // Month (e.g., "May")
-        const dayOfMonth = date.format('DD'); // Day of the month (e.g., "09")
+    //     // Get the day of the week, month, and day
+    //     const dayOfWeek = date.format('dddd'); // Day of the week (e.g., "Thursday")
+    //     const month = date.format('MMMM'); // Month (e.g., "May")
+    //     const dayOfMonth = date.format('DD'); // Day of the month (e.g., "09")
 
-        // Return the formatted date
-        return `${dayOfWeek}, ${month} ${dayOfMonth}, ${date.year()}`;
-    };
+    //     // Return the formatted date
+    //     return `${dayOfWeek}, ${month} ${dayOfMonth}, ${date.year()}`;
+    // };
     return (
         <View className="flex-1 relative">
             <StatusBar style="light"></StatusBar>
@@ -87,7 +87,7 @@ export default function HomeScreen({ route, navigation }) {
                         <Text className="text-white text-center text-xs tracking-tight">
 
 
-                            {formatDate(new Date().toLocaleDateString())}
+                            {new Date().toLocaleDateString()}
                         </Text>
                     </View>
                     {/* weather images */}
